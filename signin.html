@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #singin_main{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 350px;
+            padding: 20px;
+        }
+        form>input{
+            display: grid;
+            padding: 10px;
+            width: 300px;
+            margin-top: 20px;
+        }
+#forgot{
+    margin-left: 20px;
+    text-decoration: underline;
+}
+button{
+    width: 320px;
+    padding:10px;
+    background-color: rgb(238, 199, 25);
+    border: 0px;
+    font-weight:bold;
+    font-size: large;
+    }
+    
+    img{
+        margin-left: 150px;
+        width: 5%;
+        /* border: 1px solid red; */
+        border-radius: 50px;
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    p{
+        margin-left: 110px;
+        font-size: large;
+    }
+    label{
+        font-weight: bold;
+        font-size: large;
+    }
+
+    #signin{
+    padding-bottom:value;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(236, 195, 13);
+    padding:5px;
+    border-bottom-width: 5px;
+    
+    }
+    #register{
+        margin-left: 30px;
+        color: grey;
+    }
+    #register:hover{
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <div id="singin_main">
+        <form>
+            <label id="signin" for="">SIGN IN</label>
+            <label id="register" for="">REGISTER</label>
+            <input type="email" name="" id="email" placeholder="Email">
+            <input type="password" id="pass" placeholder="Password">
+             <span><input type="checkbox">Keep me signed in ?</span>
+            <span id="forgot">Forgot your password?</span> <br> <br>
+            <button>Sign In</button>
+            <div id="logo">
+                <p>or connect via</p>
+                <img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0icmYtbG9nbyByZi1sb2dvLS1nb29nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIzMjM2IDE2OSAxNiAxNiI+PGcgZGF0YS1uYW1lPSJHcm91cCAzIj48cGF0aCBkPSJNMzI1MS42OCAxNzcuMThhOS4xOTIgOS4xOTIgMCAwMC0uMTQ1LTEuNjM2SDMyNDR2My4wOTVoNC4zMDVhMy42OCAzLjY4IDAgMDEtMS42IDIuNDE0djIuMDA2aDIuNTg1YTcuOCA3LjggMCAwMDIuMzktNS44OHoiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzQyODVmNCIvPjxwYXRoIGQ9Ik0zMjQzLjk5NiAxODVhNy42MzggNy42MzggMCAwMDUuMjk0LTEuOTM4bC0yLjU4NS0yLjAwN2E0LjgyNiA0LjgyNiAwIDAxLTcuMTg1LTIuNTM1aC0yLjY3M3YyLjA3M2E4IDggMCAwMDcuMTUgNC40MDd6IiBkYXRhLW5hbWU9IlNoYXBlIiBmaWxsPSIjMzRhODUzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJNMzIzOS41MjQgMTc4LjUyYTQuNzMgNC43MyAwIDAxMC0zLjA0di0yLjA3MmgtMi42NzNhOC4wMSA4LjAxIDAgMDAwIDcuMTg1bDIuNjc0LTIuMDczeiIgZGF0YS1uYW1lPSJTaGFwZSIgZmlsbD0iI2ZiYmMwNSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PHBhdGggZD0iTTMyNDMuOTk2IDE3Mi4xODJhNC4zMjIgNC4zMjIgMCAwMTMuMDU4IDEuMmwyLjI5NS0yLjI5NWE3LjY4OCA3LjY4OCAwIDAwLTUuMzU0LTIuMDg3IDggOCAwIDAwLTcuMTUgNC40MDdsMi42NzQgMi4wNzNhNC43NjggNC43NjggMCAwMTQuNDc2LTMuM3oiIGRhdGEtbmFtZT0iU2hhcGUiIGZpbGw9IiNlYTQzMzUiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGQ9Ik0zMjM2IDE2OWgxNnYxNmgtMTZ6IiBkYXRhLW5hbWU9IlNoYXBlIiBmaWxsPSJub25lIi8+PC9nPjwvc3ZnPg==" alt="">
+            </div>
+            
+        </form>
+    </div>
+   </body>
+</html>
+
+<script>
+document.querySelector("form").addEventListener("submit",signbtn)
+let registercall=JSON.parse(localStorage.getItem("registerd"))
+
+function signbtn(event){
+    event.preventDefault()
+   let checkemail=document.querySelector("#email").value 
+   let checkpas=document.querySelector("#pass").value 
+   let present=1
+   registercall.forEach(function(el){
+    if(el.email==checkemail && el.pass==checkpas){
+    present=4;
+    }
+   })
+if(present==4){
+    console.log("pal")
+}
+else{
+    console.log("no")
+}
+}
+</script>
