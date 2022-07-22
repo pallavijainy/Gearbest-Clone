@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #navbar{
+            display: flex;
+            justify-content: space-around;
+        }
+   #nav2>div{
+       display: flex;
+       gap: 20px;
+       margin-top: 20px;
+}
+form>#searchbar{
+padding: 10px;
+width: 400px;
+border-radius: 25px;
+}
+#nav2 span{
+    margin: auto;
+}
+
+/* top section */
+#top{
+    width: 80%;
+    border: 1px solid red;
+    height: 700px;
+    margin: 40px auto 10px auto;
+}
+#top_cat{
+    border:1px solid green;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+    text-align: center;
+    font-size: 30px;
+    /* font-weight: bold; */
+    background-color: #ffda00;
+}
+#top_cat>div{
+    border: 1px solid brown;
+    background-color: #ffda00;
+}
+#top_cat>div:nth-child(1){
+    width: 259px;
+    background-color: black;
+    color:white;
+}
+#top1{
+    border: 1px solid blue;
+    height: 450px;
+    display: flex;
+    background-color: aliceblue;
+}
+#top2{
+    border: 1px solid rgb(167, 28, 202);
+    height: 198px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:repeat(1,1fr) ;
+    gap: 10px;
+}
+#top1>div:nth-child(1){
+    border: 1px solid brown;
+    width: 20%;
+}
+#top1>div:nth-child(2){
+    border: 1px solid brown;
+    width: 80%;
+}
+#top2>div{
+    border: 1px solid red;
+}
+#top2>div>img{
+    width: 100%;
+    height: 100%;
+}
+#top2_div1{
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+}
+#top2>#top2_div1>img{
+    width: 40px;
+    height: 40px;
+   margin-top: 40px;
+}
+strong{
+    color: #ffda00; 
+    display: block;
+    white-space: nowrap;
+    font-size: 20px;
+}
+#top1>div:nth-child(2)>img{
+    width: 100%;
+    height: 100%;
+}
+#category{
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+/* --------------------------------------- */
+
+#diff_category{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    font-size: large;
+}
+
+#all{
+    display: flex;
+    border: 1px solid red;
+    width: 80%;
+    height: 2000px;
+    margin: auto;
+}
+    #all>#side{
+    width:300px;
+    height: 100%;
+    border: 1px solid blue;
+
+}
+#main{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="logo error">
+        </div>
+        <div id="nav2">
+            <div>
+              <span>Save $3 with App</span>
+              <span>Support Center</span>
+              <span>Ship to United States / USD</span>
+              <span>Language</span>
+              <span>Country Website</span>
+            </div>
+            <div>
+                <form>
+                    <input id="searchbar"  type="text" placeholder="Search your product">
+                </form>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAtFBMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAADg4OAAAAACAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAADf398AAAAAAAAAAADR0dEAAABISEipqakmJiYAAAAoKCgAAAAAAAAAAAA1NTXMzMwAAAAAAADf399WVlYAAAAAAACsrKzf398AAAAAAAAAAAAAAADg4ODR0dHe3t4ReYomAAAAOHRSTlMAQPzFDvXsrm47E/C+tKl/9+dnGQXx8NuvioN5VVBKRTQQBvrz7d3Z18u4t7SjlYBfX11NMDAfCv0TF7MAAADjSURBVCjPpZDXcsJADEXX29wbEHoCIT30fg3//1941svA2h5eOE+aOdJIuuRJ9iyB/O/zqhlQKFKrbByAuZy7DNQ1DReIiipCyktD7W3Xz7o74r3AMZSN0M9y/HcSwjYUwzRTvJIemKFC/BRqWZmKIU7FVL6rYahDgo+z2hWhXfq6AXx9nmYrBqwrP+s0qEPKeHFKc/H7VhGLBJq/oWEsCaDTi+O+LYCgeTNjATrXqR4HFB3valrfkONboysR3B0+IneMgOsxgeoywo50JbAx1RBSr0INLaWadaq4f2LVMCGPuACORSZPQ0RWdgAAAABJRU5ErkJggg==" alt="error">
+                    <span>Sign In</span>
+                </div>
+               <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAA81BMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGxsYTExMAAAAAAADg4OAAAADf39/g4OAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADh4eEAAADi4uIAAADt7e3d3d1iYmLf39+RkZEAAADg4OAAAAArKyvf398QEBCoqKglJSXg4OAXFxfg4OAKCgohISHf39/f398dHR3f398AAADHx8cAAAAAAABSUlIvLy8AAAAAAAD////g4OAAAACSkpLV1dW0tLSHh4dycnJUVFRDQ0NMKKmhAAAASHRSTlMA+vTB+ZAoIAwF/NummWpAM/z89vHw5OHc0Me7mIuHc3BmU0tHPjwiFA37+/r47Ovr5drTz8C0s62to6GIgoB3ZF1WThsZEwOBbnz7AAAA+klEQVQoz73Q1W7DQBRF0WPm2GFsOCkzM7c+5f//msa3ELvtW6Wsh5krbc2MNJg5y9BUakNgqFHVDGta+kUK36coDr7KwGXTRNQmWeo6d1cN6iHEgsquDJdUIhkMbtgytOnjQ6f3OdTZkd3j+L5VjbdGGB2Uq8eLAHpsJMUh7b04cSJrbdJMluQp8iJOawEWVTmlcCeT1oGQdSQ0LscZ8wg4JylHN59NJpVbSY7Ht3Qpo5kcEqbCl1Q6C1ixJciVfPguNYNrqf89nLaVI6oRUvbJZylLu1RCZJy6fH2M4/w29T5+uC6w8LSqszLGLzebnAhs/OXc03P4r3d0M0A98TPbIwAAAABJRU5ErkJggg==" alt="error">
+                <span>Favorites</span>
+               </div>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAn1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqJAAUEQD/2QAAAABJPgAAAAAAAAAAAAD/2gD/2gAAAAAAAAD/2gAAAAAAAAAAAAD/2QAAAAAAAAD/2wAAAAAAAAD/2QAAAAD/4wAAAAD/2gD51ADQsQCiigB0YwBGOwCQauaIAAAALnRSTlMA09hV4UL48rFIE/zazLuVfXZJIR39++3r5+fk29TJqKakm46JgG9lW1pNNjISfz/FPQAAALRJREFUKM+dz1cKwzAQRdHn7vRip/feX+r+1xaDLDx2Igi5XyMODCP8mcWkvpkYwVDIg4mabBhkxs9qinx+qZxe0ka+Mn01zNkq0JmWvmJwFU0Ah6GiIzuSekCLa0UReRM0BRrcQRXwLmgB1OmlVOND0AaoMk5pyaegPVCpIG3Ll6ATYtqaPHYFXZJ3mH2+2Aq6ekF8D79UGrklPTu27Qgakq6ex6QlyBVk56kdBNnCqlpo7g1Gxypv685O3AAAAABJRU5ErkJggg==" alt="error">
+                    <span>Cart</span>
+                </div>
+               </div>
+        </div>
+    </div>
+
+    <!-- next page start -->
+
+    <div id="diff_category">
+        <h3>Category</h3>
+        <h3>SUPER DEALS</h3>
+        <h3>APP ONLY</h3>
+        <h3>NEW ARRIVALS</h3>
+    </div>
+        
+    <!-- ---------customer side heading----------- -->
+
+<div id="all">
+    <div id="side">
+        <p><a href="">Men's Fashion</a></p>
+        <p><a href="">Women's Fashion</a></p>
+        <p><a href="">Computers,Tablet & Office</a></p>
+        <p><a href="">Watches & Jewelry</a></p>
+        
+      
+       
+       
+    </div>
+    <div id="main"></div>
+</div>
+
+
+
+</body>
+
+    <script>
+
+var customer=[
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16534/goods_thumb_220-v1/ed230b4b2700.jpg",
+        name:" Smart Wristband 1.62 inch",
+        price:"$45.99",
+        flesh:"Flash sale"
+    },
+
+    {
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16502/goods_thumb_220-v3/31d0d9d6c843.jpg",
+    name:"A9 Mini video surveillance",
+    price:"11.55",
+    flesh:"Flash sale"
+    },
+
+    {
+image:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16481/goods_thumb_220-v1/260091316a48.jpg",
+name:"Y30 TWS wireless Bluetooth stereo Earphone",
+price:"$6.99",
+flesh:"Flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16481/goods_thumb_220-v1/260091316a48.jpg",
+        name:"xiaomi Bluetooth Headsets wireless Earphone",
+        price:"$12.90",
+        flesh:"Flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16425/goods_thumb_220-v1/25c1b46ea40f.jpg",
+        name:"Mini TWS Bluetooth soprts stereo",
+        price:"$10.89",
+        flesh:"flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16508/goods_thumb_220-v1/83e81faaf67b.jpg",
+        name:"V9 wireless Bluetooth Headset sports",
+        price:"11.90",
+        flesh:"flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/store/6882689559126274048/16489/goods_thumb_220-v7/4e06e8fb9369.jpg",
+        name:"motorcycle snowmobile helmet",
+        price:"$40.92",
+        flesh:"flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16488/goods_thumb_220-v1/15dfcf82b175.jpg",
+        name:"camera outdoor digital zoom",
+        price:"$55.50",
+        flesh:"flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16502/goods_thumb_220-v1/11e3da22fcb7.jpg",
+        name:"video game controller",
+        price:"$33.99",
+        flesh:"flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16498/goods_thumb_220-v1/a23a0a2de311.jpg",
+        name:"Dual screen full HD",
+        price:"$22.99",
+        flesh:"flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6507287161137004544/16370/goods_thumb_220-v1/447f8213481c.jpg",
+        name:"Bluetooth speaker 60W",
+        price:"$106.99",
+        flesh:"flash sale"
+
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16500/goods_thumb_220-v1/a09642af37f9.jpg",
+        name:"Lenoco pro bluetooth speaker",
+        price:"$11.06",
+        flesh:"flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16456/goods_thumb_220-v1/3b6747fa8ca8.jpg",
+        name:"V9 wireless Bluetooth Headset sports",
+        price:"11.90",
+        flesh:"flash sale"
+        
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16500/goods_thumb_220-v2/542b6a69c3b7.jpg",
+        name:" Smart Wristband 1.62 inch",
+        price:"$45.99",
+        flesh:"Flash sale"
+        
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6917792618172837888/16544/goods_thumb_220-v3/14adc5249df1.jpg",
+        name:"Y30 TWS wireless Bluetooth stereo Earphone",
+    price:"$6.99",
+    flesh:"Flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16419/goods_thumb_220-v1/56fc9286e7a1.jpg",
+        name:"video game controller",
+        price:"$33.99",
+        flesh:"flash sale"
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16517/goods_thumb_220-v1/99b167075f51.jpg",
+        name:"Mini TWS Bluetooth soprts stereo",
+        price:"$10.89",
+        flesh:"flash sale"
+        
+    },
+    {
+        image:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16012/goods_thumb_220-v1/396b20b9f3ef.jpg",
+        name:"V9 wireless Bluetooth Headset sports",
+        price:"11.90",
+        flesh:"flash sale"
+    }
+]
+
+
+customer.forEach(function(el){
+    let div=document.createElement("div")
+    let image=document.createElement("img");
+image.setAttribute("src",el.image)
+
+let name=document.createElement("h4");
+name.innerText=el.name;
+
+let price=document.createElement("price")
+price.innerText=el.price;
+
+let flesh=document.createElement("p")
+flesh.innerText=el.flesh;
+
+let btn=document.createElement("button");
+btn.innerText="Add to Cart"
+
+div.append(image,name,price,flesh,btn)
+document.querySelector("#all>#main").append(div);
+
+})
+
+    </script>
+
+   
