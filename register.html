@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #singin_main{
+        #register_main{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             width: 350px;
             padding: 20px;
@@ -45,9 +45,10 @@ button{
     label{
         font-weight: bold;
         font-size: large;
+        margin-right: 20px;
     }
 
-    #signin{
+    #register{
     padding-bottom:value;
     border-bottom-style:solid;
     border-bottom-color:rgb(236, 195, 13);
@@ -75,7 +76,8 @@ button{
     </style>
 </head>
 <body>
-    <div id="singin_main">
+    
+    <div id="register_main">
         <form>
             <label id="signin" for="">SIGN IN</label>
             <label id="register" for="">REGISTER</label>
@@ -124,8 +126,13 @@ function signbtn(event){
     else if(obj.pass!==obj.retype){
         alert("Recheck password")
     }
+
     else{
         alert("Fill all necessary information")
     }
 }
+
+document.querySelector("#signin").addEventListener("click",function(){
+    window.location.href="signin.html"
+})
 </script>

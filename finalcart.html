@@ -4,109 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-         #navbar{
-            display: flex;
-            justify-content: space-around;
-        }
-   #nav2>div{
-       display: flex;
-       gap: 20px;
-       margin-top: 20px;
-}
-form>#searchbar{
-padding: 10px;
-width: 400px;
-border-radius: 25px;
-}
-#nav2 span{
-    margin: auto;
-}
-#diff_category{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 40px;
-    font-size: large;
-}
-#diff_category>h3:hover{
-    padding-bottom:value;
-    border-bottom-style:solid;
-    border-bottom-color:rgb(236, 195, 13);
-    padding:5px;
-    border-bottom-width: 5px;
+    <title>cart page</title>
+</head>
+<style>
+    #nav1>img:nth-child(1){
+        width:400px;
+        margin-right:450px;
     }
-    #diff_category>h3:nth-child(2){
-    padding-bottom:value;
-    border-bottom-style:solid;
-    border-bottom-color:rgb(236, 195, 13);
-    padding:5px;
-    border-bottom-width: 5px;
+    #nav1>img:nth-child(2){
+        width:100px;
+        margin-right:500px;
     }
-    /* --------------------timeline-------------- */
-    #timeline{
-        position:sticky;
-        top: 0;
-        width: 100%;
-        height: 70px;
-        background-color: black;
+   
+    #coll_cart{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        color: grey;
-        font-size: 30px;
-        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        background-color: rgb(231, 226, 226);
+        margin: 20px;
+        padding: 40px;
+      }
+      
+    
+    #coll_cart > div>img{
+        width:150px;
+        /* border: 1px solid red; */
     }
-    #timeline>div:nth-child(2){
-        background-color: red;
-        color: white;
-        }
-
-        /* recommend css */
-#mainitem{
-width: 1200px;
-/* border: 1px solid red; */
-margin: 20px auto auto auto;
+    #coll_cart>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #coll_cart>div{
+        display: flex;
 }
-#items{
-/* border: 1px solid blue; */
-display: grid;
-grid-template-columns: repeat(4,1fr);
-grid-template-rows: repeat(5,auto);
-gap: 20px;
+h4{
+    width: 200px;
+    padding: 5px;
 }
-#items>div{
-text-align: center;
+#priid{
+    padding: 40px;
 }
-#items>div:nth-child(1){
-background-color: brown;
-color: white;
+#fleid{
+    width:fit-content;
+    padding: 25px
 
 }
-#items>div>img{
-width: 100%;
-height: 200px;
-border: 2px solid white;
-
+#btnid{
+    padding:10px;
+    margin-top: 35px;
+    height: fit-content;
 }
-#items>div:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-/* --------------------------------------footer-------------------------- */
-#pop{
-    margin-top: 100px;
+    footer{
+    margin-top: 50px;
 }
        footer>div a{
-    
-           margin-left: 50px;
+           margin-left:50px;
            color:black;
            text-decoration: none;
-
        }
        footer>div a:hover{
            text-decoration: underline;
        }
 #alg{
-    margin-left: 140px;
+    margin-left: 120px;
 }
 
 #footlogo{
@@ -151,6 +111,8 @@ input+span{
     height: 20px;
     
 }
+/* ---------------------------- */
+
 #searching>p{
     font-size:large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -193,68 +155,58 @@ text-decoration: underline;
     width: 300px;
     margin: auto;
 }
-span>a{
-    text-decoration: none;
-    color: black;
+#total{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    
 }
-    </style>
-</head>
+#finalbtn{
+    display: flex;
+}
+#finalbtn button{
+    width: 300px;
+    height: 40px;
+    margin: 50px 50px 50px 50px;
+   
+}
+#finalbtn button:nth-child(2){
+    background-color: yellow;
+}
+</style>
 <body>
-    <div id="navbar">
-        <div id="nav1">
-            <img src="https://www.pdevice.com/wp-content/uploads/2019/02/GearBest-New-Logo-Biggest-Brand-Upgrade-New-Color-New-Text-New-Logo-Design.jpg" alt="logo error">
+    <div id="nav1">
+        <img src="https://www.pdevice.com/wp-content/uploads/2019/02/GearBest-New-Logo-Biggest-Brand-Upgrade-New-Color-New-Text-New-Logo-Design.jpg" alt="logo error">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAn1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqJAAUEQD/2QAAAABJPgAAAAAAAAAAAAD/2gD/2gAAAAAAAAD/2gAAAAAAAAAAAAD/2QAAAAAAAAD/2wAAAAAAAAD/2QAAAAD/4wAAAAD/2gD51ADQsQCiigB0YwBGOwCQauaIAAAALnRSTlMA09hV4UL48rFIE/zazLuVfXZJIR39++3r5+fk29TJqKakm46JgG9lW1pNNjISfz/FPQAAALRJREFUKM+dz1cKwzAQRdHn7vRip/feX+r+1xaDLDx2Igi5XyMODCP8mcWkvpkYwVDIg4mabBhkxs9qinx+qZxe0ka+Mn01zNkq0JmWvmJwFU0Ah6GiIzuSekCLa0UReRM0BRrcQRXwLmgB1OmlVOND0AaoMk5pyaegPVCpIG3Ll6ATYtqaPHYFXZJ3mH2+2Aq6ekF8D79UGrklPTu27Qgakq6ex6QlyBVk56kdBNnCqlpo7g1Gxypv685O3AAAAABJRU5ErkJggg=="" alt="">
+        
+    </div>
+    <div id="coll_cart"></div>
+    
+    <div id="total">
+        <div id="total2">
+            <p> <b>45 days</b> <br>
+                Money Back Guarantee </p>
+            <p><b>360 days</b><br>Free Repair Warranty
+
+            </p>
         </div>
-        <div id="nav2">
-            <div>
-              <span>Save $3 with App</span>
-              <span>Support Center</span>
-              <span>Ship to United States / USD</span>
-              <span>Language</span>
-              <span>Country Website</span>
-            </div>
-            <div>
-                <form>
-                    <input id="searchbar"  type="text" placeholder="Search your product">
-                </form>
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAtFBMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAADg4OAAAAACAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAADf398AAAAAAAAAAADR0dEAAABISEipqakmJiYAAAAoKCgAAAAAAAAAAAA1NTXMzMwAAAAAAADf399WVlYAAAAAAACsrKzf398AAAAAAAAAAAAAAADg4ODR0dHe3t4ReYomAAAAOHRSTlMAQPzFDvXsrm47E/C+tKl/9+dnGQXx8NuvioN5VVBKRTQQBvrz7d3Z18u4t7SjlYBfX11NMDAfCv0TF7MAAADjSURBVCjPpZDXcsJADEXX29wbEHoCIT30fg3//1941svA2h5eOE+aOdJIuuRJ9iyB/O/zqhlQKFKrbByAuZy7DNQ1DReIiipCyktD7W3Xz7o74r3AMZSN0M9y/HcSwjYUwzRTvJIemKFC/BRqWZmKIU7FVL6rYahDgo+z2hWhXfq6AXx9nmYrBqwrP+s0qEPKeHFKc/H7VhGLBJq/oWEsCaDTi+O+LYCgeTNjATrXqR4HFB3valrfkONboysR3B0+IneMgOsxgeoywo50JbAx1RBSr0INLaWadaq4f2LVMCGPuACORSZPQ0RWdgAAAABJRU5ErkJggg==" alt="error">
-                    <span><a href="signin.html">Sign In</a></span>
-                </div>
-               <div>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAA81BMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGxsYTExMAAAAAAADg4OAAAADf39/g4OAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADh4eEAAADi4uIAAADt7e3d3d1iYmLf39+RkZEAAADg4OAAAAArKyvf398QEBCoqKglJSXg4OAXFxfg4OAKCgohISHf39/f398dHR3f398AAADHx8cAAAAAAABSUlIvLy8AAAAAAAD////g4OAAAACSkpLV1dW0tLSHh4dycnJUVFRDQ0NMKKmhAAAASHRSTlMA+vTB+ZAoIAwF/NummWpAM/z89vHw5OHc0Me7mIuHc3BmU0tHPjwiFA37+/r47Ovr5drTz8C0s62to6GIgoB3ZF1WThsZEwOBbnz7AAAA+klEQVQoz73Q1W7DQBRF0WPm2GFsOCkzM7c+5f//msa3ELvtW6Wsh5krbc2MNJg5y9BUakNgqFHVDGta+kUK36coDr7KwGXTRNQmWeo6d1cN6iHEgsquDJdUIhkMbtgytOnjQ6f3OdTZkd3j+L5VjbdGGB2Uq8eLAHpsJMUh7b04cSJrbdJMluQp8iJOawEWVTmlcCeT1oGQdSQ0LscZ8wg4JylHN59NJpVbSY7Ht3Qpo5kcEqbCl1Q6C1ixJciVfPguNYNrqf89nLaVI6oRUvbJZylLu1RCZJy6fH2M4/w29T5+uC6w8LSqszLGLzebnAhs/OXc03P4r3d0M0A98TPbIwAAAABJRU5ErkJggg==" alt="error">
-                <span>Favorites</span>
-               </div>
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAn1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqJAAUEQD/2QAAAABJPgAAAAAAAAAAAAD/2gD/2gAAAAAAAAD/2gAAAAAAAAAAAAD/2QAAAAAAAAD/2wAAAAAAAAD/2QAAAAD/4wAAAAD/2gD51ADQsQCiigB0YwBGOwCQauaIAAAALnRSTlMA09hV4UL48rFIE/zazLuVfXZJIR39++3r5+fk29TJqKakm46JgG9lW1pNNjISfz/FPQAAALRJREFUKM+dz1cKwzAQRdHn7vRip/feX+r+1xaDLDx2Igi5XyMODCP8mcWkvpkYwVDIg4mabBhkxs9qinx+qZxe0ka+Mn01zNkq0JmWvmJwFU0Ah6GiIzuSekCLa0UReRM0BRrcQRXwLmgB1OmlVOND0AaoMk5pyaegPVCpIG3Ll6ATYtqaPHYFXZJ3mH2+2Aq6ekF8D79UGrklPTu27Qgakq6ex6QlyBVk56kdBNnCqlpo7g1Gxypv685O3AAAAABJRU5ErkJggg==" alt="error">
-                    <span><a href="finalcart.html">Cart</a></span>
-                </div>
-               </div>
+        <div id="total1">
+            <p>Your subtotal</p>
+            <p>Promotion</p>
+            <p><b>TOTAL</b></p>
         </div>
+        <div id="final">
+            <p>0</p>
+            <p>0</p>
+            <p>0</p>
+            
+        </div>
+        
     </div>
 
-    <div id="diff_category">
-        <h3>Category</h3>
-        <h3>SUPER DEALS</h3>
-        <h3>APP ONLY</h3>
-        <h3>NEW ARRIVALS</h3>
-    </div>
-
-    <!-- -------------------timeline------------------------ -->
-
-    <div id="timeline">
-        <div>Ends In:08:44:24</div>
-        <div>Ends In:32:44:02</div>
-        <div>Coming Soon 21:30</div>
-    </div>
-
-    <!-- ----------------------------------items----------------- -->
-<div id="mainitem">
-    <div id="items"></div>
-</div>
-  <!-- ----------------------------------footer------------------------ -->
-
+    <div id="finalbtn"></div>
     <footer>
-        <div id="pop">
+        <div>
             <span>Popular Searches:</span>
             <a href="">realme buds q </a>
             <a href="">xiaomi redmi 7 case </a>
@@ -263,10 +215,11 @@ span>a{
             <a href="">5g phone </a>
             <a href="">projector 4k </a>
             <a href="">men's sports shoes</a>
-            <a href="">creality ender 3 </a>
-            <a href="">xiaomi mi band 5 </a>
+            
         </div>
             <div id="alg">
+                <a href="">creality ender 3 </a>
+            <a href="">xiaomi mi band 5 </a>
                 <a href="">led light strip </a>
                 <a href="">360 s7 robot vacuum cleaner </a>
                 <a href="">amazfit gts 2 </a>
@@ -411,260 +364,150 @@ span>a{
 </body>
 </html>
 
+<!-- collection cart -->
+
 <script>
-    let arr_recommend=JSON.parse(localStorage.getItem("recommend")) || []
-    let recommend=[
-        {
-            image:"https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJpbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-            name:"360 G300H Dash Smart Car DVR 3MP Camera WIFI ",
-            price:"$79.00",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1591386618629-4ef48ffdc0c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"Xiaomi Redmi Buds 4 Pro Earphone Bluetooth 3 Mic Wireless",
-            price:"$67.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1627989580309-bfaf3e58af6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"TRONXY CRUX 1 3D printer Presale",
-            price:"$179.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1633346703386-bf6f1e59ec6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"M-855 Wireless Router Wifi 300M Signal",
-            price:"$14.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1622986416229-fc8233af2ae6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"JJRC H108 DIY Building Blocks Drone with HD",
-            price:"$36.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1491927570842-0261e477d937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"360 G300H DasInch  Sm We Maps Night Vision Parking Monitor",
-            price:"$38.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1621319332247-ce870cdad56c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"3HD 160 Degree Camera aps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1623998022290-a74f8cc36563?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Ymx1ZXRvb3RoJTIwZWFycGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:"Baseus GaN Power Bank USB Charger",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1604214684476-2ecbacbb477e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"Headphones with Wireless Stereo",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-         {
-            image:"https://images.unsplash.com/photo-1604214684476-2ecbacbb477e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"FHD 160 Degree MP Camera  Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1505236273191-1dce886b01e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ymx1ZXRvb3RoJTIwZWFycGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:"V9 Wireless Bluetooth CSR V4.1 Headset ",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1511300961358-669ca3ad05af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Ymx1ZXRvb3RoJTIwZWFycGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:"Headphones with Wireless Stereo Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ymx1ZXRvb3RoJTIwZWFycGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:"V9 Wireless Bluetooth CSR V4.1",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Ymx1ZXRvb3RoJTIwZWFycGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:"Camera Professional Brushless Toys -",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1570993492903-ba4c3088f100?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZXRvb3RoJTIwZWFycGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:"360 G300H Dash Cam 1296P Fon Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1594360101822-8d8b11816576?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ymx1ZXRvb3RoJTIwZWFycGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:"Men Sport Shoes Snen Running Lightweight",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJpbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-            name:"Men Sport Shoes Sneaknning Lightweight",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1586283893587-a537c0f2fe70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d3Jpc3RiYW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"Men Sport Shoes Sneakersunning Lightweight",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1612814266697-e5814f3063cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByaW50ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:" DVR 3MP Camera WIFI GPS Google Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1630327722923-5ebd594ddda9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHByaW50ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:"amera WIFI GPS Google Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1510511336377-1a9caa095849?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHByaW50ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
-            name:" Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1625961332771-3f40b0e2bdcf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJpbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-            name:" Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJpbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-            name:"Men Sport Shoes Sneakeng Lightweight",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1581591524425-c7e0978865fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNhbWVyYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-            name:" Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNhbWVyYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-            name:"GPS Google Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1495121553079-4c61bcce1894?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            name:"Car DVR 3MPVision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            name:"Smart Car DVR 3MP CaVision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            name:" Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            name:"360 G300H Dash Cam 1296P FHD 160 Degree 2.0 Inch  Smart Car ",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1591386618629-4ef48ffdc0c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"360 G300H Dash Cam 1296P FHD 160",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1627989580309-bfaf3e58af6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"Google Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1591386618629-4ef48ffdc0c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJsdWV0b290aCUyMGVhcnBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-            name:"630 G300H Dash Cam 1296P FHD 160 Degree 2.0 Inch  Smart Car ",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            name:" Camera WIFI GPS Google Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://media.istockphoto.com/id/1428108147/photo/close-up-there-are-big-headphones-and-a-small-mini-music-bluetooth-portable-black-cylinder.jpg?b=1&s=170667a&w=0&k=20&c=GfEOqVEUAZ6z0-mJNtgzo1Z32rqn3uPq3hxcdlQb-lY=",
-            name:" Maps Night Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-            image:"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            name:"Smart Car DVR 3MP Camera WIFht Vision Parking Monitor",
-            price:"$549.99",
-            flash:"Flash Sale"
-        },
-        {
-        image:"https://media.istockphoto.com/id/1205742649/photo/wireless-earbuds-or-earphones-on-blue-background.jpg?b=1&s=170667a&w=0&k=20&c=V6IGfnmkDAvf7Tl70HgrxD2yAq0P-EpZjE0kn5on07k=",
-        name:" Smart Wristband 1.62 inch",
-        price:"$45.99",
-        flesh:"Flash sale"
-    },
-
-
-        
-    ]
-
-    recommend.forEach(function(el){
+    let collection_cart=JSON.parse(localStorage.getItem("collection"))
     
-        let div=document.createElement("div");
-let image=document.createElement("img");
-image.setAttribute("src",el.image)
+    collection_cart.forEach(function(el,index){
+        
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.setAttribute("src",el.image)
+        
 
-let name=document.createElement("h4");
-name.innerText=el.name;
+        let name=document.createElement("h4")
+        name.innerText=el.name
 
-let price=document.createElement("price")
-price.innerText=el.price;
+        let btn=document.createElement("button")
+        btn.innerText="Remove"
+        btn.addEventListener("click",function(){
+            event.target.parentNode.remove()
+          collection_cart.splice(index,1)
+          localStorage.setItem("collection",JSON.stringify(collection_cart))
+        })
 
-let flesh=document.createElement("p")
-flesh.innerText=el.flash;
-
-let btn=document.createElement("button");
-btn.innerText="Add to Cart"
-btn.addEventListener("click",function(){
-    arr_recommend.push(el)
-    localStorage.setItem("recommend",JSON.stringify(arr_recommend))
-})
-
-
-div.append(image,name,price,flesh,btn)
-document.querySelector("#items").append(div);
+        div.append(image,name,btn)
+        document.querySelector("#coll_cart").append(div)
     })
-
-    document.querySelector("#nav1").addEventListener("click",function(){
-    window.location.href="finalhomepage.html"
-    })
-
 
 </script>
+
+<!-- ------------------------------------------------------------------------------ -->
+
+<!-- superdeal cart -->
+<script>
+let superdeal_cart=JSON.parse(localStorage.getItem("super"))
+    
+    superdeal_cart.forEach(function(el,index){
+        
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.setAttribute("src",el.image)
+
+        let name=document.createElement("h4")
+        name.innerText=el.name
+
+        let btn=document.createElement("button")
+        btn.innerText="Remove"
+        btn.addEventListener("click",function(){
+            event.target.parentNode.remove()
+          superdeal_cart.splice(index,1)
+          localStorage.setItem("super",JSON.stringify(superdeal_cart))
+        })
+
+        div.append(image,name,btn)
+        document.querySelector("#coll_cart").append(div)
+    })
+
+</script>
+
+<!-- ------------------------------------------------------------------------------ -->
+
+<!-- new cart -->
+<script>
+    let new_cart=JSON.parse(localStorage.getItem("new"))
+        
+        new_cart.forEach(function(el,index){
+            
+            let div=document.createElement("div")
+            let image=document.createElement("img")
+            image.setAttribute("src",el.image)
+    
+            let name=document.createElement("h4")
+            name.innerText=el.name
+    
+            let btn=document.createElement("button")
+            btn.innerText="Remove"
+            btn.addEventListener("click",function(){
+                event.target.parentNode.remove()
+              new_cart.splice(index,1)
+              localStorage.setItem("new",JSON.stringify(new_cart))
+            })
+    
+            div.append(image,name,btn)
+            document.querySelector("#coll_cart").append(div)
+        })
+    
+    </script>
+
+    <!-- ------------------------------------------------------------------------------ -->
+
+<!-- recommend cart -->
+<script>
+    let recommend_cart=JSON.parse(localStorage.getItem("recommend"))
+       if(recommend_cart.length==0){
+           document.querySelector("#final").innerHTML=""
+           document.querySelector("#total").innerHTML=""
+        let v= document.querySelector("#finalbtn")
+        let emp=document.createElement("button")
+        emp.innerText="Sign In"
+        emp.addEventListener("click",function(){
+            window.location.href="signin.html"
+        })
+        let anuj=document.createElement("button")
+        anuj.innerText="Go shopping"
+        anuj.addEventListener("click",function(){
+            window.location.href="finalhomepage.html"
+        })
+         v.append(emp,anuj)
+
+       }
+
+    let sum=0;
+        recommend_cart.forEach(function(el,index){
+            sum+=Number(el.price);
+            document.querySelector("#final").innerText=sum;
+            
+            let div=document.createElement("div")
+            let image=document.createElement("img")
+            image.setAttribute("src",el.image)
+    
+            let name=document.createElement("h4")
+            name.innerText=el.name
+    
+            let price=document.createElement("price")
+            price.innerText="$"+el.price;
+            price.id="priid"
+            let flesh=document.createElement("p")
+            flesh.innerText=el.flash; 
+            flesh.id="fleid"
+            let btn=document.createElement("button")
+            btn.innerText="Remove"
+    
+            btn.id="btnid"
+            btn.addEventListener("click",function(){
+                window.location.reload()
+                event.target.parentNode.remove()
+              recommend_cart.splice(index,1)
+              localStorage.setItem("recommend",JSON.stringify(recommend_cart))
+            })
+    
+            div.append(image,name,price,flesh,btn)
+            document.querySelector("#coll_cart").append(div)
+        })
+    
+        document.querySelector("#nav1").addEventListener("click",function(){
+    window.location.href="finalhomepage.html"
+    })
+    </script>
