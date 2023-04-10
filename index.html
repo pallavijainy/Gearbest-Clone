@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+        }
+   #nav2>div{
+       display: flex;
+       gap: 20px;
+       margin-top: 20px;
+}
+#searchbar{
+padding: 10px;
+width: 400px;
+border-radius: 25px;
+}
+span{
+    margin: auto;
+}
+
+/* top section */
+#top{
+    width: 80%;
+    border: 1px solid red;
+    height: 700px;
+    margin: 40px auto 10px auto;
+}
+#top_cat{
+    border:1px solid green;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+    text-align: center;
+    font-size: 30px;
+    /* font-weight: bold; */
+    background-color: #ffda00;
+}
+#top_cat>div{
+    border: 1px solid brown;
+    background-color: #ffda00;
+}
+#top_cat>div:nth-child(1){
+    width: 259px;
+    background-color: black;
+    color:white;
+}
+#top1{
+    border: 1px solid blue;
+    height: 450px;
+    display: flex;
+    background-color: aliceblue;
+}
+#top2{
+    border: 1px solid rgb(167, 28, 202);
+    height: 198px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:repeat(1,1fr) ;
+    gap: 10px;
+}
+#top1>div:nth-child(1){
+    border: 1px solid brown;
+    width: 20%;
+}
+#top1>div:nth-child(2){
+    border: 1px solid brown;
+    width: 80%;
+}
+#top2>div{
+    border: 1px solid red;
+}
+#top2>div>img{
+    width: 100%;
+    height: 100%;
+}
+#top2_div1{
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+}
+#top2>#top2_div1>img{
+    width: 40px;
+    height: 40px;
+   margin-top: 40px;
+}
+strong{
+    color: #ffda00; 
+    display: block;
+    white-space: nowrap;
+    font-size: 20px;
+}
+#top1>div:nth-child(2)>img{
+    width: 100%;
+    height: 100%;
+}
+#category{
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="logo error">
+        </div>
+        <div id="nav2">
+            <div>
+                <i class="icon-iphone"></i>
+              <span>Save $3 with App</span>
+              <span>Support Center</span>
+              <span>Ship to United States / USD</span>
+              <span>Language</span>
+              <span>Country Website</span>
+            </div>
+            <div>
+                <form>
+                    <input id="searchbar"  type="text" placeholder="Search your product">
+                </form>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAtFBMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAADg4OAAAAACAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAADf398AAAAAAAAAAADR0dEAAABISEipqakmJiYAAAAoKCgAAAAAAAAAAAA1NTXMzMwAAAAAAADf399WVlYAAAAAAACsrKzf398AAAAAAAAAAAAAAADg4ODR0dHe3t4ReYomAAAAOHRSTlMAQPzFDvXsrm47E/C+tKl/9+dnGQXx8NuvioN5VVBKRTQQBvrz7d3Z18u4t7SjlYBfX11NMDAfCv0TF7MAAADjSURBVCjPpZDXcsJADEXX29wbEHoCIT30fg3//1941svA2h5eOE+aOdJIuuRJ9iyB/O/zqhlQKFKrbByAuZy7DNQ1DReIiipCyktD7W3Xz7o74r3AMZSN0M9y/HcSwjYUwzRTvJIemKFC/BRqWZmKIU7FVL6rYahDgo+z2hWhXfq6AXx9nmYrBqwrP+s0qEPKeHFKc/H7VhGLBJq/oWEsCaDTi+O+LYCgeTNjATrXqR4HFB3valrfkONboysR3B0+IneMgOsxgeoywo50JbAx1RBSr0INLaWadaq4f2LVMCGPuACORSZPQ0RWdgAAAABJRU5ErkJggg==" alt="error">
+                    <span>Sign In</span>
+                </div>
+               <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAA81BMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGxsYTExMAAAAAAADg4OAAAADf39/g4OAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADh4eEAAADi4uIAAADt7e3d3d1iYmLf39+RkZEAAADg4OAAAAArKyvf398QEBCoqKglJSXg4OAXFxfg4OAKCgohISHf39/f398dHR3f398AAADHx8cAAAAAAABSUlIvLy8AAAAAAAD////g4OAAAACSkpLV1dW0tLSHh4dycnJUVFRDQ0NMKKmhAAAASHRSTlMA+vTB+ZAoIAwF/NummWpAM/z89vHw5OHc0Me7mIuHc3BmU0tHPjwiFA37+/r47Ovr5drTz8C0s62to6GIgoB3ZF1WThsZEwOBbnz7AAAA+klEQVQoz73Q1W7DQBRF0WPm2GFsOCkzM7c+5f//msa3ELvtW6Wsh5krbc2MNJg5y9BUakNgqFHVDGta+kUK36coDr7KwGXTRNQmWeo6d1cN6iHEgsquDJdUIhkMbtgytOnjQ6f3OdTZkd3j+L5VjbdGGB2Uq8eLAHpsJMUh7b04cSJrbdJMluQp8iJOawEWVTmlcCeT1oGQdSQ0LscZ8wg4JylHN59NJpVbSY7Ht3Qpo5kcEqbCl1Q6C1ixJciVfPguNYNrqf89nLaVI6oRUvbJZylLu1RCZJy6fH2M4/w29T5+uC6w8LSqszLGLzebnAhs/OXc03P4r3d0M0A98TPbIwAAAABJRU5ErkJggg==" alt="error">
+                <span>Favorites</span>
+               </div>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAn1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqJAAUEQD/2QAAAABJPgAAAAAAAAAAAAD/2gD/2gAAAAAAAAD/2gAAAAAAAAAAAAD/2QAAAAAAAAD/2wAAAAAAAAD/2QAAAAD/4wAAAAD/2gD51ADQsQCiigB0YwBGOwCQauaIAAAALnRSTlMA09hV4UL48rFIE/zazLuVfXZJIR39++3r5+fk29TJqKakm46JgG9lW1pNNjISfz/FPQAAALRJREFUKM+dz1cKwzAQRdHn7vRip/feX+r+1xaDLDx2Igi5XyMODCP8mcWkvpkYwVDIg4mabBhkxs9qinx+qZxe0ka+Mn01zNkq0JmWvmJwFU0Ah6GiIzuSekCLa0UReRM0BRrcQRXwLmgB1OmlVOND0AaoMk5pyaegPVCpIG3Ll6ATYtqaPHYFXZJ3mH2+2Aq6ekF8D79UGrklPTu27Qgakq6ex6QlyBVk56kdBNnCqlpo7g1Gxypv685O3AAAAABJRU5ErkJggg==" alt="error">
+                    <span>Cart</span>
+                </div>
+               </div>
+        </div>
+    </div>
+    <div id="top">
+        <div id="top_cat">
+            <div>category</div>
+            <div>SUPER DEALS</div>
+            <div>APP ONLY</div>
+            <div>NEW ARRIVALS</div>
+            
+        </div>
+        <div id="top1">
+            <div id="category">
+                <p>Consumer Electronics</p>
+                <p>Industrial & Scientific</p>
+                <p>Cell Phones & Accessories</p>
+                <p>Appliances</p>
+                <p>Outdoors,Fitness & Sports</p>
+                <p>Computers,Tablets & Office</p>
+                <p>Health & Personal Care</p>
+                <p>Home & Garden</p>
+                <p>Men's Fashion</p>
+                <p>Watches & Promotion</p>
+            </div>
+            <div>
+                <img src="https://uidesign.gbtcdn.com/GB/image/8823/1190X420.jpg" alt="">
+            </div>
+        </div>
+        <div id="top2">
+            <div id="top2_div1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAEDElEQVRYR+2Xa4yccxTGf09XXeIW93tajQ9WE7HqmrjERlEVidiZd1cIkqoPRN0SlA+bklRIRMsHUUREJfvubENUlKAicYmIUkE/IFH3SyUImta8j5z1n2TMzsyONWQ/OMlkLu+8533+5zznnOeIaWSaRlj4H0yrbPztyNjeGTgdWACcCOwPHAL8DnwDfAW8CawDXpa0rVMqdAzG9q7ANcBNwJ7pAUUC8AUwAzg4gYvPYd8C10l6ohNAHYGxHZEYAQ4AqsCTwCiwVtIv9Q+yvTtwHnARsBDGefl8fJe0pR2oScHYvhxYBfQADwPLJG3u5KS2T0j3Hg18BpwladOUOJOAPAL8mk72VCcgGiK1A/AgEIf6GeiX9FYzPy0jY3s+8Gwi5mmSgpRTNtvBtTuB74E+SZ83OmsKJpE1UrEXUJI0NmUUdTfaXpGKYAMwT5Lr/bYCcytwR5BW0mA3gIQP21FlbwDHA1dIeqgtGNu7AF8DewBzJX3QLTAJ0EnA68B3wEGSojrHbUJkbEdZPh18kXRuN4HUfNl+CTgDmC/phXZgHgCuBBZJilLuutm+CrgfWCHp2nZgPgSOjBYv6cuuI/mTO4cDnwDvSjqmHZjoqDtKmtkMyOjo6KlFUcwql8ura9WQ5/kFwLZyufxM3DM8PDyjt7f3EuCjLMtebfRjO+gRXPlB0r5NwdgO0v4IbJY0q9FJpVLpK4ri7UTEJVmWrRwZGblQUiX9d0G5XF6X5/nNwPIIQlEUcwcHByPafzHbMVRjyMbBt08gsO29gZgfn0qa3ehgbGxsTrVa/TiBWZxl2ao8z2P+rE2/9WdZtj7P8yXAvQGmWq0eOjQ0NCHddWBmSoqJ37SaYhJvl7RTszRVKpXjiqKYXSqVxurStFDS1lKp9GJdmrKenp5NAwMD0eAao1JL0xZJ+7XjTJx8DnCEpPEodNvqCPyOpL52YB4FLgUWS4pp3XWzfTVwH7BSUqR03Jo1vaiCx5JKi8bUdbMd6ezvpOkFV4JwQeZ/YxwcBbyfpveBbcdBqorbgNvTDAn5MM72bpjtNUD0pRsk3VPvs9XUjujEgAwiL5e0tEtAQoquTrr5sFp/acmZ2gXbi5JkfE7SOf8UjO1TgBiQYWdKeqXRZzuldzdwI3CLpFBoUzbbJeDx6LbAoKQQ9xOsHZjQqfOSVNwHOBvYCCyV9F4nyFI/WQZcnOTrZZIiTU2tFWd2A35qVvrJS6weISE3NmpZ23FvaKKh9B7qLha7AUmvtTtEKzDnA7EJxDCLzTCE+froC8D1wLF1TrcCsX7EGIklLnarmt+Yc3dFg5P022TRbAUm0hNieUOjaA6Htk9O5RnVVnvFSvLfrLeTnaob1yfdKLvxkE59TCswfwDQKo0zMTy1RgAAAABJRU5ErkJggg==" alt="">
+                <strong>24/7</strong>
+                <strong>Online Service</strong>
+            </div>
+            <div><img src="https://uidesign.gbtcdn.com/GB/image/9746/1NIUBILITY230x120.jpg" alt=""></div>
+            <div><img src="https://uidesign.gbtcdn.com/GB/image/8823/dreame_230X120_en.jpg" alt=""></div>
+            <div><img src="https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg" alt=""></div>
+            <div><img src="https://uidesign.gbtcdn.com/GB/image/6874/230x120b_en.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
